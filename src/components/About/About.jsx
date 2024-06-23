@@ -1,9 +1,13 @@
 import React from "react";
 
 import styles from "./About.module.css";
+import Varshini_Resume from "../../../assets/about/Varshini_Resume.pdf"
 import { getImageUrl } from "../../utlis"
 
 export const About = () => {
+  const handleDownloadResume = () => {
+    window.open(Varshini_Resume); 
+  };
   return (
     <section className={styles.container} id="about">
       <h2 className={styles.title}>About</h2>
@@ -13,28 +17,18 @@ export const About = () => {
           alt="Me sitting with a laptop"
           className={styles.aboutImage}
         />
-        <ul className={styles.aboutItems}>
-          <li className={styles.aboutItem}>
-            <img src={getImageUrl("about/cursorIcon.png")} alt="Cursor icon" />
             <div className={styles.aboutItemText}>
-              <h3>Frontend Developer</h3>
               <p>
-                I'm a frontend developer with experience in building responsive
-                and optimized sites
+              Driven by a passion for Full Stack Development and armed with a Master's degree in Computer Science from Purdue University, 
+              I am a recent graduate eager to make a meaningful impact in an entry-level role. 
+              With a strong foundation in Algorithms, Databases, Java, Python, and full-stack technologies, I am poised to contribute to innovative projects that redefine technological boundaries. 
+              I am actively pursuing opportunities to apply my academic prowess to real-world challenges, eager to grow both professionally and personally.
               </p>
-            </div>
-          </li>
-          <li className={styles.aboutItem}>
-            <img src={getImageUrl("about/serverIcon.png")} alt="Server icon" />
-            <div className={styles.aboutItemText}>
-              <h3>Backend Developer</h3>
-              <p>
-                I have experience developing fast and optimised back-end systems
-                and APIs
-              </p>
-            </div>
-          </li>
-        </ul>
+             
+            <button className={styles.resumeButton} onClick={handleDownloadResume}>
+           Download Resume
+          </button>
+          </div> 
       </div>
     </section>
   );

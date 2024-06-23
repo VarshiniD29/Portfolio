@@ -19,7 +19,9 @@ export const Skills = () => {
                     <p>{skill.title}</p>
                   </div>
                   <div className={styles.progressBarContainer}>
-                    <div className={styles.progressBar} style={{ width: `${skill.percentage}%` }}></div>
+                    <div className={styles.progressBar} style={{ width: `${skill.percentage}%` }}>
+                      <span className={styles.progressText}>{skill.percentage}%</span>
+                    </div>
                   </div>
                 </div>
               ))}
