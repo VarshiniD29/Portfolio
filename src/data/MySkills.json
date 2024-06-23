@@ -1,0 +1,33 @@
+[
+    {
+      "categoryName": "Frontend",
+      "skills": [
+        {
+          "title": "React",
+          "imageSrc": "skills/react.png",
+          "percentage": 80
+        },
+        {
+          "title": "JavaScript",
+          "imageSrc": "skills/node.png",
+          "percentage": 90
+        }
+      ]
+    },
+    {
+      "categoryName": "Backend",
+      "skills": [
+        {
+          "title": "Node.js",
+          "imageSrc": "skills/node.png",
+          "percentage": 75
+        },
+        {
+          "title": "Express.js",
+          "imageSrc": "skills/node.png",
+          "percentage": 70
+        }
+      ]
+    }
+  ]
+  

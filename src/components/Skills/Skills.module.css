@@ -1,0 +1,120 @@
+@import "../../vars.css";
+
+.container {
+  color: var(--color-text);
+  margin-top: 79px;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 100px;
+}
+
+.title {
+  color: var(--color-text);
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.skillCategories {
+  width: 45%;
+}
+
+.category {
+  margin-bottom: 30px;
+}
+
+.category h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.skillInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.skillInfo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: var(--color-secondary);
+  padding: 5px;
+}
+
+.skillInfo p {
+  font-size: 20px;
+}
+
+.progressBarContainer {
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-left: 10px;
+}
+
+.progressBar {
+  height: 10px;
+  background-color: var(--color-primary);
+  border-radius: 5px;
+}
+
+.interpersonalSkills {
+  width: 45%;
+}
+
+.interpersonalSkills h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.interpersonalSkills p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 830px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    gap: 34px;
+  }
+
+  .skillCategories, .interpersonalSkills {
+    width: 100%;
+  }
+
+  .skillInfo img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .skillInfo p {
+    font-size: 18px;
+  }
+
+  .progressBar {
+    height: 8px;
+  }
+
+  .interpersonalSkills h3, .category h3 {
+    font-size: 24px;
+  }
+}
