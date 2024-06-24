@@ -29,10 +29,17 @@ export const Skills = () => {
           ))}
         </div>
         <div className={styles.interpersonalSkills}>
-          <h3>Interpersonal Skills</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-          <p>Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
-          <p>Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
+        <h3>Interpersonal Skills</h3>
+          <ul className={styles.skillList}>
+            <li>Leadership <span className={styles.checkmark}>&#10004;</span></li>
+            <li>Communication <span className={styles.checkmark}>&#10004;</span></li>
+            <li>Teamwork and Collaboration <span className={styles.checkmark}>&#10004;</span></li>
+            <li>Problem-Solving <span className={styles.checkmark}>&#10004;</span></li>
+            <li>Attention to Detail <span className={styles.checkmark}>&#10004;</span></li>
+            <li>Decision Making <span className={styles.checkmark}>&#10004;</span></li>
+            <li>Adaptability <span className={styles.checkmark}>&#10004;</span></li>
+            <li>Accepting Challenges <span className={styles.checkmark}>&#10004;</span></li>
+          </ul>
         </div>
       </div>
     </section>

@@ -1,31 +1,40 @@
 [
     {
-      "categoryName": "Frontend",
       "skills": [
         {
-          "title": "React",
+          "title": "Java",
           "imageSrc": "skills/react.png",
+          "percentage": 85
+        },
+        {
+          "title": "Python",
+          "imageSrc": "skills/node.png",
           "percentage": 80
         },
         {
-          "title": "JavaScript",
+          "title": "HTML, CSS, Javascript",
           "imageSrc": "skills/node.png",
-          "percentage": 90
-        }
-      ]
-    },
-    {
-      "categoryName": "Backend",
-      "skills": [
+          "percentage": 85
+        },
         {
-          "title": "Node.js",
+          "title": "Spring Framework",
           "imageSrc": "skills/node.png",
           "percentage": 75
         },
         {
-          "title": "Express.js",
+          "title": "React Js, Node Js",
           "imageSrc": "skills/node.png",
-          "percentage": 70
+          "percentage": 75
+        },
+        {
+          "title": "MySQL, MongoDB",
+          "imageSrc": "skills/node.png",
+          "percentage": 80
+        },
+        {
+          "title": "AWS(EC2, S3, Lambda, RDS)",
+          "imageSrc": "skills/node.png",
+          "percentage": 75
         }
       ]
     }

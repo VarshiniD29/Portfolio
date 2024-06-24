@@ -106,41 +106,56 @@
   margin-bottom: 15px;
 }
 
-.interpersonalSkills p {
+.skillList {
+  list-style: none;
+  padding: 0;
+}
+
+.skillList li {
   font-size: 18px;
   line-height: 1.5;
+  display: flex;
+  align-items: center;
   margin-bottom: 10px;
 }
 
+.checkmark {
+  margin-left: auto;
+  font-size: 24px;
+  color: var(--color-primary); /* Adjust checkmark color */
+}
+
 @media screen and (max-width: 830px) {
-    .content {
-      flex-direction: column;
-      align-items: center;
-      gap: 34px;
-    }
-  
-    .skillCategories, .interpersonalSkills {
-      width: 100%;
-    }
-  
-    .skillInfo img {
-      width: 30px;
-      height: 30px;
-    }
-  
-    .skillInfo p {
-      font-size: 16px; /* Adjusted font size for skill titles on smaller screens */
-    }
-  
-    .progressBar {
-      height: 12px; /* Reduced height of the progress bar for smaller screens */
-    }
-  
-    .progressText {
-      font-size: 12px; /* Reduced font size for progress text on smaller screens */
-    }
-  
-    .interpersonalSkills h3, .category h3 {
-      font-size: 24px;
-    }
+  .content {
+    flex-direction: column;
+    align-items: center;
+    gap: 34px;
   }
+
+  .skillCategories,
+  .interpersonalSkills {
+    width: 100%;
+  }
+
+  .skillInfo img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .skillInfo p {
+    font-size: 16px; /* Adjusted font size for skill titles on smaller screens */
+  }
+
+  .progressBar {
+    height: 12px; /* Reduced height of the progress bar for smaller screens */
+  }
+
+  .progressText {
+    font-size: 12px; /* Reduced font size for progress text on smaller screens */
+  }
+
+  .interpersonalSkills h3,
+  .category h3 {
+    font-size: 24px;
+  }
+}

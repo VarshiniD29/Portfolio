@@ -39,6 +39,7 @@
 .aboutItemText {
   flex: 1; 
   margin-left: 30px; 
+  opacity: 0; /* Start with opacity 0 to hide */
 }
 
 .aboutItemText p {
@@ -46,6 +47,13 @@
   line-height: 1.6; 
   text-align: justify; 
   font-family: var(--font-roboto);
+}
+
+.highlightBackground {
+  font-style: italic;
+  font-size: 1.1em;
+  font-weight: bold;
+  color : rgb(70, 70, 157);
 }
 
 .resumeButton {
@@ -63,11 +71,10 @@
 
 .resumeButton:hover {
   font-weight: bold;
-  background-color: #c1becf; /* Change background color on hover */
+  background-color:  #c1becf; /* Change background color on hover */
   color: var(--color-primary); /* Change text color on hover */
   border-color: var(--color-primary); /* Change border color on hover */
 }
-
 
 @media screen and (max-width: 830px) {
   .container {

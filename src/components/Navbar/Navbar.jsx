@@ -1,46 +1,47 @@
-import React, {useState} from 'react'
-
-import styles from "./Navbar.module.css";
-import { getImageUrl } from "../../utlis"
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
+import styles from './Navbar.module.css';
+import { getImageUrl } from '../../utlis';
 
 const Navbar = () => {
-    const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <nav className={styles.navbar}>
-     <a className={styles.title} href = "/">PORTFOLIO</a> 
-     
-     <div className={styles.menu}>
-     <img
+      <Link className={styles.title} to="/" onClick={() => window.scrollTo(0, 0)}>PORTFOLIO</Link>
+
+      <div className={styles.menu}>
+        <img
           className={styles.menuBtn}
           src={
             menuOpen
-              ? getImageUrl("nav/closeIcon.png")
-              : getImageUrl("nav/menuIcon.png")
+              ? getImageUrl('nav/closeIcon.png')
+              : getImageUrl('nav/menuIcon.png')
           }
           alt="menu-button"
           onClick={() => setMenuOpen(!menuOpen)}
         />
-        <ul className = {`${styles.menuItems} ${menuOpen && styles.menuOpen}`} onClick = {()=> setMenuOpen(false)}>  
-     <li>
-            <a href="#about">About</a>
+        <ul className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`} onClick={() => setMenuOpen(false)}>
+          <li>
+            <ScrollLink to="about" smooth={true} duration={50}>About</ScrollLink>
           </li>
           <li>
-            <a href="#skills">Skills</a>
+            <ScrollLink to="skills" smooth={true} duration={50}>Skills</ScrollLink>
           </li>
           <li>
-            <a href="#experience">Experience</a>
+            <ScrollLink to="experience" smooth={true} duration={50}>Experience</ScrollLink>
           </li>
           <li>
-            <a href="#projects">Projects</a>
+            <ScrollLink to="projects" smooth={true} duration={50}>Projects</ScrollLink>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <ScrollLink to="contact" smooth={true} duration={50}>Contact</ScrollLink>
           </li>
         </ul>
-        </div>
+      </div>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
-
+export default Navbar;
