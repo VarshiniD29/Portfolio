@@ -27,22 +27,22 @@
 }
 
 .skills {
-  width: 100%;
-  margin-top: 14px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 6px;
-  list-style: none;
+  flex-wrap: wrap; /* This allows the list to wrap to the next line if there are too many items */
+  list-style-type: none; /* Removes the default list styling */
+  padding: 0; /* Removes default padding */
+  margin: 0; /* Removes default margin */
+  gap: 10px; /* Adds space between the list items */
 }
 
-.skill {
-  font-size: 25px;
-  font-weight: 400;
-  border-radius: 100px;
-  background: #9595db;
-  padding: 2px 22px;
+.skill::before {
+  content: '•'; /* Adds a dot before each skill item */
+  color: rgb(131, 135, 160); /* Sets the color of the dot */
+  margin-right: 5px; /* Adds space between the dot and the skill text */
+  font-size: 30px; /* Adjusts the size of the dot */
+  vertical-align: middle; /* Aligns the dot vertically with the text */
 }
+
 
 .links {
   width: 100%;

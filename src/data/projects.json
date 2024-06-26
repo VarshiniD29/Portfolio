@@ -1,25 +1,25 @@
 [
   {
-    "title": "Project A",
+    "title": "Interactive Campus Map",
     "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
+    "description": "Implemented Dynamic and Interactive features to Purdue's static Campus Map.",
+    "skills": ["React", "Google Maps", "Node", "MySQL", "SDLC"],
     "demo": "https://www.example.com",
     "source": "https://www.github.com"
   },
   {
-    "title": "Project B",
+    "title": "Healthcare Management",
     "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node", "Sass"],
+    "description": "Developed a full-stack Web Application to streamline Healthcare services.",
+    "skills": ["HTML", "CSS","Javascript", "Java", "Spring Boot","AWS"],
     "demo": "https://www.example.com",
     "source": "https://www.github.com"
   },
   {
-    "title": "Project C",
+    "title": "Airline Application",
     "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
+    "description": "Designed a seamless web application that facilitates a robust Airline reservation sytem.",
+    "skills": ["HTML", "CSS", "Javascript","PHP", "MySQL"],
     "demo": "https://www.example.com",
     "source": "https://www.github.com"
   }

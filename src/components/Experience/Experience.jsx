@@ -2,7 +2,6 @@ import React from "react";
 import { InView } from 'react-intersection-observer';
 import styles from "./Experience.module.css";
 import history from "../../data/history.json";
-import skills from "../../data/skills.json";
 import { getImageUrl } from "../../utlis";
 
 export const Experience = () => {
@@ -10,19 +9,14 @@ export const Experience = () => {
     <section className={styles.container} id="experience">
       <h2 className={styles.title}>Experience</h2>
       <div className={styles.content}>
-        <div className={styles.skills}>
-          {skills.map((skill, id) => (
-            <InView key={id} triggerOnce={false}>
-              {({ inView, ref }) => (
-                <div ref={ref} className={`${styles.skill} ${inView ? styles.animate : ''}`}>
-                  <div className={styles.skillImageContainer}>
-                    <img src={getImageUrl(skill.imageSrc)} alt={skill.title} />
-                  </div>
-                  <p>{skill.title}</p>
-                </div>
-              )}
-            </InView>
-          ))}
+        <div className={styles.imageContainer}>
+          <InView triggerOnce={false}>
+            {({ inView, ref }) => (
+              <div ref={ref} className={`${styles.skillImage} ${inView ? styles.animate : ''}`}>
+                <img src={getImageUrl("history/Exp3.png")} alt="Experience Image" />
+              </div>
+            )}
+          </InView>
         </div>
         <ul className={styles.history}>
           {history.map((historyItem, id) => (

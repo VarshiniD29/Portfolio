@@ -22,62 +22,48 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  align-items: flex-start; /* Align items to the start */
   margin-top: 14px;
 }
 
-.skills {
-  width: 45%;
+.imageContainer {
+  width: 40%;
   display: flex;
-  flex-wrap: wrap;
-  gap: 37px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-right: 45px;
 }
 
-.skill {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 11px;
+.skillImage {
+  width: 100%;
+  max-width: 500px; /* Adjust the max width as needed */
+  border-radius: 10px;
   opacity: 0; /* Start with opacity 0 */
   transform: translateX(-50px); /* Start from left */
   transition: all 0.6s ease-out;
 }
 
-.skillImageContainer {
-  background-color: var(--color-secondary);
-  border-radius: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 120px;
-  height: 120px;
-}
-
-.skillImageContainer img {
-  width: 75px;
-}
-
-.skill p {
-  font-size: 25px;
-  font-family: var(--font-roboto);
-  font-weight: 500;
+.skillImage img {
+  width: 100%;
+  border-radius: 10px;
 }
 
 .history {
   width: 45%;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 25px;
 }
 
 .historyItem {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 17px;
+  flex-direction: column;
+  gap: 10px;
   background: #6981ac;
   background: linear-gradient(90deg, #6b7c9d 0%, rgba(77, 105, 158, 0) 100%);
   border-radius: 10px;
-  padding: 24px;
+  padding: 20px;
   opacity: 0; /* Start with opacity 0 */
   transform: translateX(50px); /* Start from right */
   transition: all 0.6s ease-out;
@@ -117,9 +103,8 @@
     gap: 34px;
   }
 
-  .skills {
+  .imageContainer {
     width: 100%;
-    flex-direction: row;
     justify-content: center;
   }
 
@@ -128,8 +113,14 @@
     gap: 9px;
   }
 
-  .skill,
-  .historyItem {
-    transform: none; /* No initial transformation on smaller screens */
+  .skillImage,
+  .historyItem { 
+    opacity: 0; /* Start with opacity 0 */
+    transform: translateX(50px); /* Start from right */
+    transition: all 0.6s ease-out;
+  }
+  .animate {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
