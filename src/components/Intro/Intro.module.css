@@ -91,14 +91,14 @@
 .bottomBlur {
   position: absolute;
   width: 70vw;
-  height: 60vw;
+  height: 70vw;
   min-width: 350px;
   min-width: 250px;
   top: 246px;
   right: -25vw;
   border-radius: 764px;
-  background: rgba(130, 136, 148, 0.7);
-  filter: blur(150px);
+  background: rgba(126, 133, 147, 0.7);
+  filter: blur(100px);
   z-index: 0;
   overflow: hidden;
 }

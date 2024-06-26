@@ -37,6 +37,9 @@
   flex-direction: column;
   align-items: center;
   gap: 11px;
+  opacity: 0; /* Start with opacity 0 */
+  transform: translateX(-50px); /* Start from left */
+  transition: all 0.6s ease-out;
 }
 
 .skillImageContainer {
@@ -71,14 +74,13 @@
   flex-direction: row;
   align-items: center;
   gap: 17px;
-  background: #41557b;
-  background: linear-gradient(90deg, #4f6285 0%, rgba(25, 55, 109, 0) 100%);
+  background: #6981ac;
+  background: linear-gradient(90deg, #6b7c9d 0%, rgba(77, 105, 158, 0) 100%);
   border-radius: 10px;
   padding: 24px;
-}
-
-.historyItem img {
-  width: 50px;
+  opacity: 0; /* Start with opacity 0 */
+  transform: translateX(50px); /* Start from right */
+  transition: all 0.6s ease-out;
 }
 
 .historyItemDetails {
@@ -86,8 +88,8 @@
 }
 
 .historyItemDetails h3 {
-  font-size: 30px;
-  font-weight: 500;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .historyItemDetails p {
@@ -101,6 +103,11 @@
   font-size: 25px;
   list-style-type: disc;
   margin-left: 17px;
+}
+
+.animate {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 @media screen and (max-width: 830px) {
@@ -119,5 +126,10 @@
   .history {
     width: 100%;
     gap: 9px;
+  }
+
+  .skill,
+  .historyItem {
+    transform: none; /* No initial transformation on smaller screens */
   }
 }
