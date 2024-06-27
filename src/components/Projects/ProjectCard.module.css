@@ -4,8 +4,9 @@
   display: flex;
   flex-direction: column;
   border-radius: 10px;
-  background: linear-gradient(180deg, #576cbc 0%, #4b6085 100%);
-  box-shadow: 0 16px 14px 0 #3a4b64;
+  /*background: #a7a7c0 ; */
+  background: linear-gradient(200deg, #4163a1 0%, rgba(77, 105, 158, 0) 100%);
+  /*box-shadow: 0 16px 14px 0 #6b7c9d; */
   padding: 18px 24px;
   max-width: 345px;
   font-family: var(--font-roboto);
@@ -22,26 +23,30 @@
 
 .description {
   margin-top: 6px;
-  font-size: 25px;
+  font-size: 23px;
   font-weight: 400;
 }
 
+
 .skills {
   display: flex;
-  flex-wrap: wrap; /* This allows the list to wrap to the next line if there are too many items */
-  list-style-type: none; /* Removes the default list styling */
-  padding: 0; /* Removes default padding */
-  margin: 0; /* Removes default margin */
-  gap: 10px; /* Adds space between the list items */
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 10px;
+  margin: 0;
+  gap: 10px;
+  font-weight: 600px;
 }
 
-.skill::before {
-  content: '•'; /* Adds a dot before each skill item */
-  color: rgb(131, 135, 160); /* Sets the color of the dot */
-  margin-right: 5px; /* Adds space between the dot and the skill text */
-  font-size: 30px; /* Adjusts the size of the dot */
-  vertical-align: middle; /* Aligns the dot vertically with the text */
+.skill {
+  display: inline-block;
+  padding: 7px 15px;
+  background-color:  var(--color-primary);
+  color: #d6d2d2;
+  border-radius: 20px;
 }
+
+  
 
 
 .links {
@@ -56,7 +61,29 @@
   color: var(--color-text);
   font-size: 30px;
   font-weight: 600;
-  border-radius: 100px;
-  background: var(--color-primary);
-  padding: 1px 22px;
+  transition: color 0.3s ease;
+  padding: 1px 20px;
+  position: relative; /* Set positioning context for pseudo-element */
 }
+
+.link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px; /* Adjust the thickness of the underline */
+  background-color: var(--color-text); /* Same color as the text */
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.link:hover {
+  color: var(--color-primary);
+}
+
+.link:hover::after {
+  transform: scaleX(1);
+  
+}
+
