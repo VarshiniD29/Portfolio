@@ -3,9 +3,9 @@ import React from "react";
 import styles from "./ProjectCard.module.css";
 import { getImageUrl } from "../../utlis"
 
-export const ProjectCard = ({
-  project: { title, imageSrc, description, skills, demo, source },
-}) => {
+export const ProjectCard = ({ project, index }) => {
+  const { title, imageSrc, description, skills, demo, source } = project;
+
   return (
     <div className={styles.container}>
       <img
@@ -26,15 +26,22 @@ export const ProjectCard = ({
 </ul>
 
 <div className={styles.links}>
-              {index === 0 && (
-                <a href={project.demo} className={styles.link}>
-                  Demo
-                </a>
-              )}
-              <a href={project.source} className={styles.link}>
-                Source
-              </a>
-            </div>
+  {index === 0 ? (
+    <>
+      <a href={demo} className={styles.link}>
+        Demo
+      </a>
+      <a href={source} className={styles.link}>
+        Source
+      </a>
+    </>
+  ) : (
+    <a href={source} className={styles.link}>
+      Source Code
+    </a>
+  )}
+</div>
+
     </div>
   );
 };

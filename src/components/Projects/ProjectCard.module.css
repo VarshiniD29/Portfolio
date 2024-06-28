@@ -4,12 +4,17 @@
   display: flex;
   flex-direction: column;
   border-radius: 10px;
-  /*background: #a7a7c0 ; */
   background: linear-gradient(200deg, #4163a1 0%, rgba(77, 105, 158, 0) 100%);
-  /*box-shadow: 0 16px 14px 0 #6b7c9d; */
   padding: 18px 24px;
   max-width: 345px;
   font-family: var(--font-roboto);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.container:hover {
+  background: linear-gradient(200deg, #7a818d 0%, rgba(77, 105, 158, 0) 100%);
+  transform: translateY(-40px);
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.2);
 }
 
 .image {
@@ -45,10 +50,33 @@
   color: #d6d2d2;
   border-radius: 20px;
 }
+.links {
+  width: 100%;
+  margin-top: 26px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--color-text);
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border: 2px solid var(--color-primary);
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.link:hover {
+  color: #ece5e5;
+  border-color: var(--color-primary);
+}
 
   
 
-
+/*
 .links {
   width: 100%;
   margin-top: 26px;
@@ -63,15 +91,15 @@
   font-weight: 600;
   transition: color 0.3s ease;
   padding: 1px 20px;
-  position: relative; /* Set positioning context for pseudo-element */
+  position: relative; 
 }
 
 .link::after {
   content: '';
   position: absolute;
   width: 100%;
-  height: 2px; /* Adjust the thickness of the underline */
-  background-color: var(--color-text); /* Same color as the text */
+  height: 2px; /
+  background-color: var(--color-text); 
   bottom: 0;
   left: 0;
   transform: scaleX(0);
@@ -79,7 +107,8 @@
 }
 
 .link:hover {
-  color: var(--color-primary);
+  color: var(--color-text);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .link:hover::after {
@@ -87,3 +116,4 @@
   
 }
 
+*/

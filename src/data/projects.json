@@ -3,24 +3,23 @@
     "title": "Interactive Campus Map",
     "imageSrc": "projects/project.png",
     "description": "Implemented Dynamic and Interactive features to Purdue's static Campus Map.",
-    "skills": ["React", "Google Maps", "Node", "MySQL", "SDLC"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "skills": ["React Js", "Google Maps","Node Js", "MySQL", "SDLC"],
+    "demo": "https://pnw-team-c-campus-map.netlify.app/",
+    "source": "https://github.com/VarshiniD29/Campusmap"
   },
   {
+    
     "title": "Healthcare Management",
     "imageSrc": "projects/project.png",
     "description": "Developed a full-stack Web Application to streamline Healthcare services.",
     "skills": ["HTML", "CSS","Javascript", "Java", "Spring Boot","AWS"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "source": "https://github.com/VarshiniD29"
   },
   {
     "title": "Airline Application",
     "imageSrc": "projects/project.png",
-    "description": "Designed a seamless web application that facilitates a robust Airline reservation sytem.",
-    "skills": ["HTML", "CSS", "Javascript","PHP", "MySQL"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "description": "A seamless web application that facilitates robust Airline reservation sytem.",
+    "skills": ["HTML", "CSS", "Javascript","PHP", "MySQL", "Bootstrap"],
+    "source": "https://github.com/VarshiniD29/Airline"
   }
 ]

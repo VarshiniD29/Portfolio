@@ -6,13 +6,12 @@ const Intro = () => {
   return (
     <section className={styles.container}>
     <div className={styles.content}>
-      <h1 className={styles.title}>Hello, This is Varshini Dunnala!</h1>
+      <h1 className={styles.title}>Hello, This is Varshini !!</h1>
       <p className={styles.description}>
-        A Passionate & Self-driven recent grad student with an interest in using React and
-        NodeJS. Reach out if you'd like to learn more!
+        An Ambitious & Self-driven recent graduate  with a passion for Full-Stack development and a drive for excellence.
       </p>
       <a href="mailto:varshinid2992@gmail.com" className={styles.contactBtn}>
-        Contact Me
+        Hire Me
       </a>
     </div>
     <img
