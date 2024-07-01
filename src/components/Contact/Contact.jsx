@@ -27,8 +27,8 @@ export const Contact = () => {
           <a href="https://github.com/VarshiniD29">github.com/VarshiniD29</a>
         </li>
       </ul>
-      <div className={styles.developmentRights}>
-        <p> &copy; 2024 Developed by Varshini | All rights reserved.</p>
+      <div className={styles.rights}>
+        <p> &copy; 2024 Developed by Varshini D | All rights reserved.</p>
       </div>
     </footer>
   );

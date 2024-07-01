@@ -13,7 +13,7 @@
 }
 .container:hover {
   background: linear-gradient(200deg, #7a818d 0%, rgba(77, 105, 158, 0) 100%);
-  transform: translateY(-40px);
+  transform: translateY(-28px);
   box-shadow: 0 40px 80px rgba(0, 0, 0, 0.2);
 }
 
