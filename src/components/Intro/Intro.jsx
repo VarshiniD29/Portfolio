@@ -40,7 +40,7 @@ const Intro = () => {
         </button>
       )}
     <img
-      src={getImageUrl("hero/heroImage.png")}
+      src={getImageUrl("hero/Profile2.png")}
       alt="Profile Picture"
       className={styles.heroImg}
     />

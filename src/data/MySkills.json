@@ -3,37 +3,37 @@
       "skills": [
         {
           "title": "Java",
-          "imageSrc": "skills/react.png",
+          "imageSrc": "skills/java.png",
           "percentage": 85
         },
         {
           "title": "Python",
-          "imageSrc": "skills/node.png",
+          "imageSrc": "skills/python.png",
           "percentage": 80
         },
         {
           "title": "HTML, CSS, Javascript",
-          "imageSrc": "skills/node.png",
+          "imageSrc": "skills/html.png",
           "percentage": 85
         },
         {
           "title": "Spring Framework",
-          "imageSrc": "skills/node.png",
+          "imageSrc": "skills/spring.png",
           "percentage": 75
         },
         {
           "title": "React Js, Node Js",
-          "imageSrc": "skills/node.png",
-          "percentage": 75
+          "imageSrc": "skills/react.png",
+          "percentage": 80
         },
         {
           "title": "MySQL, MongoDB",
-          "imageSrc": "skills/node.png",
+          "imageSrc": "skills/database.png",
           "percentage": 80
         },
         {
           "title": "AWS(EC2, S3, Lambda, RDS)",
-          "imageSrc": "skills/node.png",
+          "imageSrc": "skills/aws.png",
           "percentage": 75
         }
       ]

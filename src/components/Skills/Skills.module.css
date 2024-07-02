@@ -25,17 +25,17 @@
   flex-direction: row;
   justify-content: space-between;
   margin-top: 20px;
-  z-index:1;
+  z-index: 1;
 }
 
 .skillCategories {
   width: 45%;
-  z-index:1;
+  z-index: 1;
 }
 
 .category {
   margin-bottom: 30px;
-  z-index:1;
+  z-index: 1;
 }
 
 .category h3 {
@@ -59,7 +59,7 @@
   width: 40px;
   height: 40px;
   border-radius: 100%;
-  background-color: var(--color-secondary);
+  background-color: #e6e3e3;
   padding: 5px;
 }
 
@@ -74,23 +74,24 @@
   border-radius: 5px;
   overflow: hidden;
   margin-left: 10px;
+  position: relative; /* Ensure the text stays within the bar */
 }
 
 .progressBar {
   height: 12px; /* Increased height of the progress bar */
-  background-color: var(--color-primary);
+  background-color: #ddd;
   border-radius: 5px;
   position: relative;
+  width: 100%; /* Full width of the container */
 }
 
-.progressBar::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
+.progress {
   height: 100%;
-  width: calc(100% - 10px); /* Adjust based on your design */
-  background-color: var(--color-primary); /* Same as progress bar color */
+  background-color: var(--color-primary);
+  border-radius: 5px;
+  position: absolute; /* Absolute positioning within the container */
+  left: 0;
+  top: 0;
 }
 
 .progressText {
@@ -139,6 +140,7 @@
   font-size: 16px;
   font-weight: bold;
 }
+
 @keyframes dropIn {
   0% {
     opacity: 0;

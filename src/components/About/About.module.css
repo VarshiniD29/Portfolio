@@ -4,7 +4,7 @@
   position: relative;
   background-color: #c0c0d3;
   border-radius: 15px;
-  padding: 100px; /* Adjusted padding for better readability */
+  padding: 100px;
   z-index: 1;
   margin: 0 auto; /* Center the container horizontally */
   margin-top: 210px; /* Add margin to offset fixed header */
@@ -78,7 +78,7 @@
 
 @media screen and (max-width: 830px) {
   .container {
-    padding: 50px; /* Adjusted padding for smaller screens */
+    padding: 60px; 
     margin-top: 150px; /* Reduced top margin for smaller screens */
   }
 
@@ -88,7 +88,7 @@
   }
 
   .aboutImage {
-    display: none; /* Hide image on smaller screens */
+    display: none; 
   }
 
   .aboutItemText {

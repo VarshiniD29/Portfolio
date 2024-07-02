@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import styles from './Skills.module.css';
@@ -42,12 +42,18 @@ export const Skills = () => {
               <h3>{category.categoryName}</h3>
               {category.skills.map((skill, skillId) => (
                 <div key={skillId} className={styles.skill}>
-               <div className={styles.skillInfo}>
-                   <img src={getImageUrl(skill.imageSrc)} alt={skill.title} />
+                  <div className={styles.skillInfo}>
+                    <img src={getImageUrl(skill.imageSrc)} alt={skill.title} />
                     <p>{skill.title}</p>
-                  </div> 
+                  </div>
                   <div className={styles.progressBarContainer}>
-                    <div className={styles.progressBar} style={{ width: `${skill.percentage}%` }}>
+                    <div className={styles.progressBar}>
+                      <motion.div
+                        className={styles.progress}
+                        initial={{ width: 0 }}
+                        animate={{ width: inView ? `${skill.percentage}%` : 0 }}
+                        transition={{ duration: 1, delay: skillId * 0.1 }}
+                      />
                       <span className={styles.progressText}>{skill.percentage}%</span>
                     </div>
                   </div>
@@ -73,11 +79,10 @@ export const Skills = () => {
               </motion.li>
             ))}
           </ul>
-          
         </div>
       </div>
       <div className={styles.topBlur} />
-    <div className={styles.bottomBlur} />
+      <div className={styles.bottomBlur} />
     </section>
   );
 };
