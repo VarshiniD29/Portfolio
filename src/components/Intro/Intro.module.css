@@ -52,6 +52,40 @@
   padding-left: 40px;
   padding-right: 40px;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contactBtn:hover{
+  transform: translateY(-10px);
+  box-shadow: 0 40px 80px rgba(59, 15, 220, 0.2);
+}
+
+.scrollToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgb(67, 67, 142);
+  color: rgb(214, 207, 207);
+  border: none;
+  padding: 18px 18px;
+  border-radius: 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: opacity 0.3s, visibility 0.3s;
+  opacity: 0.8;
+  visibility: visible;
+  z-index: 1000;
+}
+
+.scrollToTop:hover {
+  opacity: 1;
+}
+.scrollToTop span {
+  font-size: 45px; /* Adjust the size of the arrow */
+  font-size: bold;
+  line-height: 0; 
+  vertical-align: middle;
+  
 }
 
 .heroImg {

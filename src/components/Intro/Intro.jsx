@@ -1,8 +1,28 @@
-import React from 'react'
+import React ,{useState, useEffect} from 'react'
 import styles from './Intro.module.css'
 import { getImageUrl } from "../../utlis"
 
 const Intro = () => {
+  const [showButton, setShowButton] = useState(false);
+
+  const handleScroll = () => {
+    if (window.pageYOffset > 300) { // Adjust the offset value as needed
+      setShowButton(true);
+    } else {
+      setShowButton(false);
+    }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
     <section className={styles.container}>
     <div className={styles.content}>
@@ -14,6 +34,11 @@ const Intro = () => {
         Hire Me
       </a>
     </div>
+    {showButton && (
+        <button onClick={scrollToTop} className={styles.scrollToTop}>
+         <span> &#8593;</span> {/* Unicode for upward arrow */}
+        </button>
+      )}
     <img
       src={getImageUrl("hero/heroImage.png")}
       alt="Profile Picture"

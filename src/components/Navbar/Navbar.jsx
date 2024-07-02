@@ -6,6 +6,8 @@ import { getImageUrl } from '../../utlis';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  
+
 
   return (
     <nav className={styles.navbar}>
@@ -22,21 +24,21 @@ const Navbar = () => {
           alt="menu-button"
           onClick={() => setMenuOpen(!menuOpen)}
         />
-        <ul className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`} onClick={() => setMenuOpen(false)}>
-          <li>
-            <ScrollLink to="about" smooth={true} duration={50}>About</ScrollLink>
+        <ul className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`} >
+          <li >
+            <ScrollLink onClick={() => setMenuOpen(false)} to="about" smooth={true} duration={50}>About</ScrollLink>
           </li>
           <li>
-            <ScrollLink to="skills" smooth={true} duration={50}>Skills</ScrollLink>
+            <ScrollLink onClick={() => setMenuOpen(false)} to="skills" smooth={true} duration={50}>Skills</ScrollLink>
+          </li>
+          <li >
+            <ScrollLink onClick={() => setMenuOpen(false)} to="experience" smooth={true} duration={50}>Experience</ScrollLink>
           </li>
           <li>
-            <ScrollLink to="experience" smooth={true} duration={50}>Experience</ScrollLink>
+            <ScrollLink onClick={() => setMenuOpen(false)} to="projects" smooth={true} duration={50}>Projects</ScrollLink>
           </li>
-          <li>
-            <ScrollLink to="projects" smooth={true} duration={50}>Projects</ScrollLink>
-          </li>
-          <li>
-            <ScrollLink to="contact" smooth={true} duration={50}>Contact</ScrollLink>
+          <li >
+            <ScrollLink onClick={() => setMenuOpen(false)} to="contact" smooth={true} duration={50}>Contact</ScrollLink>
           </li>
         </ul>
       </div>

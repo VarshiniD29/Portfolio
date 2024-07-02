@@ -37,7 +37,7 @@
 
 .menuItems a {
   font-size: 25px;
-  color: var(--color-text);
+  color : var(--color-text);
   text-decoration: none;
   position: relative; /* Position relative for pseudo-element */
   transition: color 0.3s ease; /* Transition for text color change */
@@ -56,7 +56,7 @@
 }
 
 .menuItems a:hover {
-  color: var(--color-primary); /* Change text color on hover */
+  color : var(--color-primary);
 }
 
 .menuItems a:hover::after {
@@ -89,22 +89,15 @@
     align-items: center;
     gap: 13px;
     border-radius: 10px;
-    background: rgb(103, 112, 129);
-    background: linear-gradient(
-      0deg,
-      rgba(25, 55, 109, 0.2) 0%,
-      rgb(129, 138, 154) 100%
-    );
+    background: rgb(158, 163, 173);
+   
     padding: 24px 33px;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
-  }
-
-  .menuItems a {
-    color : rgb(235, 232, 232);
   }
   .menuItems a:hover {
     color : rgb(235, 232, 232);
   }
+
   .menuOpen {
     display: flex;
     z-index: 1;

@@ -1,7 +1,7 @@
 [
   {
     "title": "Interactive Campus Map",
-    "imageSrc": "projects/project.png",
+    "imageSrc": "projects/Screenshot (414).png",
     "description": "Implemented Dynamic and Interactive features to Purdue's static Campus Map.",
     "skills": ["React Js", "Google Maps","Node Js", "MySQL", "SDLC"],
     "demo": "https://pnw-team-c-campus-map.netlify.app/",
@@ -10,7 +10,7 @@
   {
     
     "title": "Healthcare Management",
-    "imageSrc": "projects/project.png",
+    "imageSrc": "projects/Screenshot (415).png",
     "description": "Developed a full-stack Web Application to streamline Healthcare services.",
     "skills": ["HTML", "CSS","Javascript", "Java", "Spring Boot","AWS"],
     "source": "https://github.com/VarshiniD29"
