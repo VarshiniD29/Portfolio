@@ -6,7 +6,7 @@ const Intro = () => {
   const [showButton, setShowButton] = useState(false);
 
   const handleScroll = () => {
-    if (window.pageYOffset > 300) { // Adjust the offset value as needed
+    if (window.pageYOffset > 300) { 
       setShowButton(true);
     } else {
       setShowButton(false);
@@ -36,7 +36,7 @@ const Intro = () => {
     </div>
     {showButton && (
         <button onClick={scrollToTop} className={styles.scrollToTop}>
-         <span> &#8593;</span> {/* Unicode for upward arrow */}
+         <span> &#8593;</span> 
         </button>
       )}
     <img

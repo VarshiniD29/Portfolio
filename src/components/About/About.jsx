@@ -12,8 +12,8 @@ export const About = () => {
 
   const controls = useAnimation();
   const { ref, inView } = useInView({
-    triggerOnce: false, // Ensure the animation triggers every time it comes into view
-    threshold: 0.1, // Adjust this threshold as needed
+    triggerOnce: false, //  animation triggers every time it comes into view
+    threshold: 0.1, 
   });
 
   useEffect(() => {

@@ -10,7 +10,7 @@
   width: 100vw;
   padding: 58px 10%;
   font-family: var(--font-roboto);
-  position: relative; /* Ensure the container is the positioning context */
+  position: relative; 
 }
 
 .text h2 {
@@ -61,11 +61,11 @@
 }
 
 .link a:hover {
-  color: var(--color-primary); /* Change text color on hover */
+  color: var(--color-primary); 
 }
 
 .link a:hover::after {
-  transform: scaleX(1); /* Display underline on hover */
+  transform: scaleX(1); 
 }
 
 .rights {
@@ -95,7 +95,7 @@
   
     .links {
       align-items: center;
-      text-align: center; /* Center links horizontally */
+      text-align: center; 
     }
   
     .link {

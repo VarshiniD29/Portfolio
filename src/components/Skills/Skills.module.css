@@ -65,7 +65,7 @@
 
 .skillInfo p {
   font-size: 20px;
-  margin-bottom: 0; /* Ensure no extra margin */
+  margin-bottom: 0; 
 }
 
 .progressBarContainer {
@@ -74,22 +74,22 @@
   border-radius: 5px;
   overflow: hidden;
   margin-left: 10px;
-  position: relative; /* Ensure the text stays within the bar */
+  position: relative; 
 }
 
 .progressBar {
-  height: 12px; /* Increased height of the progress bar */
+  height: 12px; 
   background-color: #ddd;
   border-radius: 5px;
   position: relative;
-  width: 100%; /* Full width of the container */
+  width: 100%; 
 }
 
 .progress {
   height: 100%;
   background-color: var(--color-primary);
   border-radius: 5px;
-  position: absolute; /* Absolute positioning within the container */
+  position: absolute; 
   left: 0;
   top: 0;
 }
@@ -100,7 +100,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: black;
-  font-size: 14px; /* Default font size for progress text */
+  font-size: 14px; 
 }
 
 .interpersonalSkills {
@@ -123,7 +123,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 10px;
-  opacity: 0; /* Start with opacity 0 */
+  opacity: 0;
   transform: translateY(-20px);
 }
 
@@ -197,15 +197,15 @@
   }
 
   .skillInfo p {
-    font-size: 16px; /* Adjusted font size for skill titles on smaller screens */
+    font-size: 16px; 
   }
 
   .progressBar {
-    height: 12px; /* Reduced height of the progress bar for smaller screens */
+    height: 12px; 
   }
 
   .progressText {
-    font-size: 12px; /* Reduced font size for progress text on smaller screens */
+    font-size: 12px; 
   }
 
   .interpersonalSkills h3,
@@ -214,7 +214,7 @@
   }
 
   .checkmark {
-    font-size: 14px; /* Adjusted checkmark size for smaller screens */
+    font-size: 14px; 
     width: 20px;
     height: 20px;
   }

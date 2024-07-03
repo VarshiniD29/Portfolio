@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import styles from './Skills.module.css';
-import skillsData from '../../data/MySkills.json'; // Ensure this JSON file has the required data
-import { getImageUrl } from '../../utlis'; // Assume this function is used to get image URLs
+import skillsData from '../../data/MySkills.json'; 
+import { getImageUrl } from '../../utlis'; 
 
 const skillVariants = {
   hidden: { opacity: 0, y: -50 },

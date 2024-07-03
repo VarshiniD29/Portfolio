@@ -37,10 +37,10 @@
 
 .skillImage {
   width: 100%;
-  max-width: 500px; /* Adjust the max width as needed */
+  max-width: 500px; 
   border-radius: 10px;
-  opacity: 0; /* Start with opacity 0 */
-  transform: translateX(-50px); /* Start from left */
+  opacity: 0; 
+  transform: translateX(-50px); 
   transition: all 0.6s ease-out;
 }
 
@@ -64,8 +64,8 @@
   background: linear-gradient(90deg, #6b7c9d 0%, rgba(77, 105, 158, 0) 100%);
   border-radius: 10px;
   padding: 20px;
-  opacity: 0; /* Start with opacity 0 */
-  transform: translateX(50px); /* Start from right */
+  opacity: 0; 
+  transform: translateX(50px); 
   transition: all 0.6s ease-out;
 }
 
@@ -115,8 +115,8 @@
 
   .skillImage,
   .historyItem { 
-    opacity: 0; /* Start with opacity 0 */
-    transform: translateX(50px); /* Start from right */
+    opacity: 0; 
+    transform: translateX(50px); 
     transition: all 0.6s ease-out;
   }
   .animate {

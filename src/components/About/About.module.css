@@ -6,9 +6,9 @@
   border-radius: 15px;
   padding: 100px;
   z-index: 1;
-  margin: 0 auto; /* Center the container horizontally */
-  margin-top: 210px; /* Add margin to offset fixed header */
-  max-width: 80%; /* Adjust width for better centering */
+  margin: 0 auto; 
+  margin-top: 210px; 
+  max-width: 80%; 
   box-sizing: border-box;
   font-family: var(--font-roboto);
 }
@@ -39,7 +39,7 @@
 .aboutItemText {
   flex: 1; 
   margin-left: 30px; 
-  opacity: 0; /* Start with opacity 0 to hide */
+  opacity: 0; 
 }
 
 .aboutItemText p {
@@ -61,9 +61,9 @@
   padding: 10px 20px;
   margin-top: 20px;
   font-size: 18px;
-  background-color: var(--color-primary); /* Default background color */
-  color: #fff; /* Default text color */
-  border: 3px solid var(--color-primary); /* Default border color */
+  background-color: var(--color-primary); 
+  color: #fff; 
+  border: 3px solid var(--color-primary); 
   border-radius: 25px;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
@@ -71,15 +71,15 @@
 
 .resumeButton:hover {
   font-weight: bold;
-  background-color:  #c1becf; /* Change background color on hover */
-  color: var(--color-primary); /* Change text color on hover */
-  border-color: var(--color-primary); /* Change border color on hover */
+  background-color:  #c1becf;
+  color: var(--color-primary);
+  border-color: var(--color-primary); 
 }
 
 @media screen and (max-width: 830px) {
   .container {
     padding: 60px; 
-    margin-top: 150px; /* Reduced top margin for smaller screens */
+    margin-top: 150px; 
   }
 
   .content {
@@ -92,7 +92,7 @@
   }
 
   .aboutItemText {
-    margin-left: 0; /* Remove margin on smaller screens */
-    text-align: center; /* Center align text on smaller screens */
+    margin-left: 0; 
+    text-align: center; 
   }
 }

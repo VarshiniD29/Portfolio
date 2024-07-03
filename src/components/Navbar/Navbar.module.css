@@ -39,8 +39,8 @@
   font-size: 25px;
   color : var(--color-text);
   text-decoration: none;
-  position: relative; /* Position relative for pseudo-element */
-  transition: color 0.3s ease; /* Transition for text color change */
+  position: relative; 
+  transition: color 0.3s ease; 
 }
 
 .menuItems a::after {
@@ -60,7 +60,7 @@
 }
 
 .menuItems a:hover::after {
-  transform: scaleX(1); /* Display underline on hover */
+  transform: scaleX(1); 
 }
 
 @media screen and (max-width: 830px) {
@@ -80,7 +80,7 @@
   }
 
   .menuBtn {
-    display: block; /* Display burger icon button */
+    display: block; 
   }
 
   .menuItems {
