@@ -92,7 +92,9 @@
       align-items: center;
       text-align: center; /* Center text horizontally */
     }
-  
+    .text h2 {
+      font-size: 70px;
+    }
     .links {
       align-items: center;
       text-align: center; 
@@ -102,6 +104,9 @@
       justify-content: center;
     }
   
+    .link a {
+      font-size: 20px;
+    }
     .rights {
       position: static;
       transform: none;

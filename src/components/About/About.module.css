@@ -4,7 +4,7 @@
   position: relative;
   background-color: #c0c0d3;
   border-radius: 15px;
-  padding: 100px;
+  padding: 75px;
   z-index: 1;
   margin: 0 auto; 
   margin-top: 210px; 
@@ -78,8 +78,9 @@
 
 @media screen and (max-width: 830px) {
   .container {
-    padding: 60px; 
+    padding: 25px; 
     margin-top: 150px; 
+    max-width: 90%; 
   }
 
   .content {

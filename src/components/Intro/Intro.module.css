@@ -39,7 +39,7 @@
 }
 
 .description {
-  font-size: 35px;
+  font-size: 30px;
   font-family: var(--font-roboto);
   margin-bottom: 52px;
 }
@@ -77,7 +77,7 @@
   transition: opacity 0.3s, visibility 0.3s;
   opacity: 0.8;
   visibility: visible;
-  z-index: 1000;
+  z-index: 9999;
 }
 
 .scrollToTop:hover {
@@ -147,13 +147,30 @@
 @media screen and (max-width: 830px) {
   .container {
     flex-direction: column-reverse;
+      margin-left: 5%;
+    margin-right: 4%;
+   
+  }
+  .title{
+    font-size: 65px;
   }
 
   .content {
     align-items: center;
     width: 100%;
+    
+  }
+  .description {
+    font-size: 30px;
   }
   .heroImg {
     display: none; 
+  }
+  .scrollToTop {
+    padding: 9px 9px;
+  }
+  .scrollToTop span {
+    font-size: 30px;
+    
   }
 }
